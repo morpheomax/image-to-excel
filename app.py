@@ -15,7 +15,9 @@ uploaded_file = st.file_uploader("📤 Sube una imagen", type=["png", "jpg", "jp
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    st.image(image, caption="🖼️ Imagen cargada", use_container_width=True)
+    #st.image(image, caption="🖼️ Imagen cargada", use_container_width=True)
+    st.image(image, caption="🖼️ Imagen cargada", width="stretch")
+
 
 
     # Botón de procesamiento
